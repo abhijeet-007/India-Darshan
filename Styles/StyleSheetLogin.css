@@ -1,0 +1,54 @@
+﻿
+.style1
+{
+    /*background-image:url("h ttp://localhost:49693/WebSite126/images/noti.png");*/
+    font:Batang;
+    background-color:Black;
+    color:White;
+    font-size:x-large;
+    font-weight:bold;
+    text-align:center;
+    height: 40px;
+    width: 100%;
+}
+.style3
+{
+    font:Batang;
+    color:Black;
+    font-size:smaller;
+    font-weight:bolder;
+}
+.style6
+{
+    font:Batang;
+    color:Black;
+    font-size:smaller;
+    font-weight:bolder;
+}
+
+h1
+{
+    font-weight:bold;
+}
+.clear
+{
+    /*background-image:url("images/noti.png");*/
+    }
+.style2
+{
+    /*background-image:url("h ttp://localhost:49693/WebSite126/images/noti.png");*/
+    height:100%;
+    width:100%;
+}
+.streach
+    {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .streach2
+    {
+        position:inherit;
+        padding-left:50px;
+        padding-right:50px;
+    }

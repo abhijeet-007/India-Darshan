@@ -1,0 +1,30 @@
+if (FileUpload2.HasFile)
+                        {
+                            string fileextention2 = System.IO.Path.GetExtension(FileUpload2.FileName);
+                            if (fileextention2.ToLower() != ".jpg" && fileextention2.ToLower() != ".jpeg")
+                            {
+                                Label7.Text = "Please select jpeg";
+                                Label7.ForeColor = System.Drawing.Color.Red;
+                            }
+                            else
+                            {
+                                int filesize2 = FileUpload2.PostedFile.ContentLength;
+                                if (filesize > 2097152)
+                                {
+                                    Label7.Text = "select file size with 2 mb";
+                                    Label7.ForeColor = System.Drawing.Color.Red;
+                                }
+                                else
+                                {
+                                    SqlConnection conn2 = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
+                                    FileUpload2.SaveAs(Server.MapPath("~/Uploads/States/") + Path.GetFileName(FileUpload2.FileName));
+                                    String link2 = "Uploads/States/" + Path.GetFileName(FileUpload2.FileName);
+                                    string query2 = "insert into StateData (SImage2) values (@image2)";
+                                    SqlCommand cmd2 = new SqlCommand(query2, conn2);
+                                    cmd2.Parameters.AddWithValue("@image2", link2);
+                                    conn2.Open();
+                                    cmd2.ExecuteNonQuery();
+                                    conn2.Close();
+                                }
+                            }
+                        }

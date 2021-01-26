@@ -1,0 +1,586 @@
+/*--
+    Author: W3layouts
+    Author URL: http://w3layouts.com
+    License: Creative Commons Attribution 3.0 Unported
+    License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*-- Reset Code --*/
+
+	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+	article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+	ol,ul{list-style:none;padding:0;margin:0;}
+	blockquote,q{quotes:none;}
+	blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+	table{border-collapse:collapse;border-spacing:0;}
+	a{text-decoration:none;}
+	.txt-rt{text-align:right;}
+	.txt-lt{text-align:left;}
+	.txt-center{text-align:center;}
+	.float-rt{float:right;}
+	.float-lt{float:left;}
+	.clear{clear:both;}
+	.pos-relative{position:relative;}
+	.pos-absolute{position:absolute;}
+	.vertical-base{vertical-align:baseline;}
+	.vertical-top{vertical-align:top;}
+	.underline{	padding-bottom:5px;	border-bottom:1px solid #eee;margin:0 0 20px 0;}
+	nav.vertical ul li{display:block;}
+	nav.horizontal ul li{display: inline-block;}
+	img{max-width:100%;}
+
+/*-- Reset Code --*/
+
+
+
+/*-- Index-Page-Styling --*/
+
+body {
+	background: url("../Theme1/images/taj-mahal.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	
+	position: relative;
+	
+  
+  
+  
+  
+  
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+	
+}
+
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+	
+}
+
+input[type="button"], input[type="submit"] {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+h1 {
+	font-size: 47px;
+    font-weight: 600;
+    color: #FFF;
+    letter-spacing: 2px;
+    margin: 40px auto;
+    font-family: 'Parisienne', cursive;
+}
+
+.containerw3layouts-agileits {
+	width: 30%;
+	margin: 0 auto;
+	background:rgba(82, 83, 94, 0.71);
+	padding: 1em 2em;
+	
+}
+
+.w3layoutscontactagileits h2 {
+	font-size: 25px;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 25px;
+}
+
+a.hiddenanchor{
+    display: none;
+}
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    height:auto;
+}
+/*--w3layouts--*/
+input[type="text"]{
+	width: 97%;
+    padding: 7px;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.76);
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+textarea#message {
+    height: 150px;
+     padding: 7px;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.76);
+    margin-top: 12px;
+    margin-bottom: 18px;
+    width: 97%;
+   
+}
+/*--agileits--*/
+#register, #login{
+	width: 100%;
+}
+
+#toregister:target ~ #wrapper #register, #tologin:target ~ #wrapper #login{
+	-webkit-animation-name: fadeInLeft;
+	-moz-animation-name: fadeInLeft;
+	-ms-animation-name: fadeInLeft;
+	-o-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-o-animation-delay: .1s;
+	-ms-animation-delay: .1s;
+	animation-delay: .1s;
+}
+
+#toregister:target ~ #wrapper #login, #tologin:target ~ #wrapper #register{
+	-webkit-animation-name: fadeOutLeftBig;
+	-moz-animation-name: fadeOutLeftBig;
+	-ms-animation-name: fadeOutLeftBig;
+	-o-animation-name: fadeOutLeftBig;
+	animation-name: fadeOutLeftBig;
+}
+
+.animate{
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;    
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-fill-mode: both;    
+	-o-animation-duration: 1s;
+	-o-animation-timing-function: ease;
+	-o-animation-fill-mode: both;    
+	-ms-animation-duration: 1s;
+	-ms-animation-timing-function: ease;
+	-ms-animation-fill-mode: both;    
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+/*--w3layouts--*/
+/*--agileits--*/
+
+h3 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #EEE;
+	padding: 10px 0;
+	border-bottom: 1px solid #CCC;
+}
+
+.ferry {
+    padding: 0px 0px 0px;
+    text-align:center;
+    
+}
+
+borderbot
+{
+    text-decoration:none;
+    border-bottom-style:groove;
+}
+h4 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 15px;
+	text-align: left;
+	color: #EEE;
+}
+
+form {
+	margin-top: 0px;
+}
+
+select, .tickets input[type="number"] {
+	width: 100%;
+	padding: 7px;
+	font-family: 'Varela Round', sans-serif;
+	border: none;
+	font-size: 15px;
+	outline: none;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.76);
+	margin-top: 12px;
+	margin-bottom: 18px;
+}
+
+select.dropdown, input#datepicker, input#datepicker1, input#datepicker2 {
+    width: 93.4%;
+    font-family: 'Varela Round', sans-serif;
+    padding: 10px 15px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    outline: none;
+    border: none;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+.book-pag {
+	padding: 5px 0px 0;
+	text-align: left;
+}
+
+.book-pag h4 {
+	font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #EEE;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#register .book-pag-frm1, #register .book-pag-frm2 {
+	width: 100%;
+	float: left;
+}
+
+.date {
+	background: url(../images/date-icon.png) no-repeat 95.5% 45% #fff;
+	cursor: pointer;
+	padding: 8px 0;
+}
+
+.book-pag-frm1 {
+	padding-top: 0px;
+}
+
+label {
+    font-size: 15px;
+    color: #EEE;
+  font-family: 'Berkshire Swash', cursive;
+    float: left;
+    width: 100%;
+	    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.tickets {
+	padding: 10px 0px;
+	text-align: left;
+}
+
+
+.tickets input[type="number"] {
+	width: 97%;
+}
+
+.wthreesubmitaits {
+    padding: 0px 0px 30px;
+    text-align: left;
+}
+
+.wthreesubmitaits input[type="submit"] {
+    padding: 7px 30px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #a50057;
+    color: #fff;
+}
+
+.wthreesubmitaits input[type="submit"]:hover {
+	background-color:#000;
+}
+
+p.change_link {
+	color: #EEE;
+	width: 100%;
+	font-size: 15px;
+	padding: 0 0 40px;
+}
+
+#wrapper p.change_link a {
+	color: #FFEB3B;
+	font-size: 18px;
+	padding-bottom: 5px;
+	margin-left: 10px;
+	border-bottom: 3px solid #FFEB3B;
+}
+
+#wrapper p.change_link a:hover {
+	color: #FFC107;
+	border-bottom: 3px solid #FFC107;
+}
+
+::-webkit-input-placeholder {
+	color: #000;
+}
+
+::-moz-placeholder {
+	color: #000;
+}
+
+::-moz-placeholder {
+	color: #000;
+}
+
+::-ms-input-placeholder {
+	color: #000;
+}
+
+
+.w3lsfooteragileits p a {
+	color: #FFF;
+}
+
+.w3lsfooteragileits p {
+	line-height: 25px;
+	margin: 50px 0;
+}
+
+.w3lsfooteragileits p a:hover {
+	color:#a50057;
+}
+
+/*-- Index-Page-Styling --*/
+
+
+
+
+
+/*--- Responsive Code ---*/
+@media screen and (max-width: 1440px) {
+	.containerw3layouts-agileits {
+		width: 32%;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.containerw3layouts-agileits {
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.containerw3layouts-agileits {
+		width: 38%;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.containerw3layouts-agileits {
+		width: 43%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.containerw3layouts-agileits {
+		width: 45%;
+	}
+}
+@media screen and (max-width: 991px) {
+input[type="text"], textarea#message {
+    width: 96.5%;
+}
+}
+@media screen and (max-width: 966px) {
+	.containerw3layouts-agileits {
+		width: 48%;
+	}
+	input[type="text"], textarea#message {
+    width: 97%;
+}
+}
+
+@media screen and (max-width: 900px) {
+	.containerw3layouts-agileits {
+		width: 50%;
+	}
+	input[type="text"], textarea#message {
+    width: 96.5%;
+}
+}
+
+@media screen and (max-width: 853px) {
+	.containerw3layouts-agileits {
+		width: 53%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.containerw3layouts-agileits {
+		width: 55%;
+	}
+	input[type="text"], textarea#message {
+    width: 97%;
+}
+}
+
+@media screen and (max-width: 768px) {
+	.containerw3layouts-agileits {
+		width: 58%;
+	}	
+	input[type="text"], textarea#message {
+    width: 96.5%;
+}
+h1 {
+    font-size: 37px;
+}
+}
+
+@media screen and (max-width: 736px) {
+	.containerw3layouts-agileits {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 667px) {
+	.containerw3layouts-agileits {
+		width: 68%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.containerw3layouts-agileits {
+		width: 70%;
+	}
+	input[type="text"], textarea#message {
+    width: 97%;
+}
+}
+
+@media screen and (max-width: 603px) {
+	.containerw3layouts-agileits {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.containerw3layouts-agileits {
+		width: 80%;
+	}
+	
+}
+
+@media screen and (max-width: 533px) {
+	.containerw3layouts-agileits {
+		width: 83%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+    margin: 40px auto 28px;
+}
+.containerw3layouts-agileits {
+    width: 73%;
+}
+input[type="text"], textarea#message {
+    width: 95.5%;
+}
+select.dropdown, input#datepicker, input#datepicker1, input#datepicker2 {
+    width: 90.8%;
+}
+.tickets input[type="number"] {
+    width: 95.8%;
+}
+textarea#message {
+    height: 100px;
+    width: 95.8%;
+}
+}
+
+@media screen and (max-width: 414px) {
+	
+.w3layoutscontactagileits h2 {
+    font-size: 20px;
+}
+h1 {
+    font-size: 29px;
+}
+input[type="text"], textarea#message {
+    width: 95%;
+}
+select.dropdown, input#datepicker, input#datepicker1, input#datepicker2 {
+    width: 89%;
+}
+.tickets input[type="number"] {
+    width: 95%;
+}
+textarea#message {
+	width: 95%;
+}
+.w3lsfooteragileits p {
+    margin: 28px 0;
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 384px) {
+	
+}
+
+@media screen and (max-width: 360px) {
+
+}
+
+@media screen and (max-width: 320px) {
+	h1 {
+    margin: 30px auto 18px;
+	    line-height: 28px;
+}
+.containerw3layouts-agileits {
+    padding: 1em 1em;
+}
+.containerw3layouts-agileits {
+    width: 80%;
+}
+.wthreesubmitaits {
+    padding: 0px 0px 14px;
+}
+input[type="text"], textarea#message {
+    width: 94%;
+}
+select.dropdown, input#datepicker, input#datepicker1, input#datepicker2 {
+    width: 87.5%;
+}
+.tickets input[type="number"] {
+    width: 94%;
+}
+textarea#message {
+    width: 94.5%;
+}
+.w3lsfooteragileits p {
+    margin: 25px 0px;
+    font-size: 13px;
+}
+.w3layoutscontactagileits h2 {
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 23px;
+}
+}
+
+
+
+
+
+/*--- Responsive Code ---*/

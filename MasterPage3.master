@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage3.master.cs" Inherits="MasterPage3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"lang="">
+
+
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+
+<head id="Head1" runat="server">
+    <title>India Darshan</title>
+    <!--<asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>-->
+    <meta content="text/html; charset=ISO-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../Theme1/styles/layout.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../Theme1/styles/framework.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+
+
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bg-dark">
+ <form id="form1" runat="server">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="AdminHome.aspx">India Darshan</a></h1>
+    </div>
+    
+    <div id="quickinfo" class="fl_right">
+      <ul class="nospace inline">
+        
+        
+        <li><strong>Logout</strong><br/>
+          <asp:Button CssClass="btn" ID="Button2" runat="server" Text="Admin" 
+                onclick="Button2_Click" CausesValidation="False" /> 
+        </li>
+      </ul>
+    </div>
+  
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+
+
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="AdminHome.aspx">Home</a></li>
+      <li><a class="drop" href="#">Update Data</a>
+        <ul>
+          <li><a href="Update State.aspx">Update State</a></li>
+          <li><a href="Update Place.aspx">Update Place</a></li>
+          <li><a href="Update Package.aspx">Update Package</a></li>
+          <li><a href="Update Trek Point.aspx">Update Trek Point</a></li>
+          <li><a href="Update Trek Packages.aspx">Update Trek Package</a></li>
+          <li><a href="Update Ritual Place.aspx">Update Ritual Place</a></li>
+          <li><a href="Update Ritual Package.aspx">Update Ritual Package</a></li>
+
+         </ul>
+      </li>
+      <li><a class="drop" href="#">Add Data</a>
+       <ul>
+          <li><a href="Add_State.aspx">Add State</a></li>
+          <li><a href="Add_Place.aspx">Add Place</a></li>
+          <li><a href="Add_Package.aspx">Add Pacakge</a></li>
+          <li><a href="Add_Trek_Point.aspx">Add Trek Point</a></li>
+          <li><a href="Add_Trek_Package.aspx">Add Trek Pacakge</a></li>
+          <li><a href="Add_Ritual_Place.aspx">Add Ritual Place</a></li>
+          <li><a href="Add_Ritual_Package.aspx">Add Ritual Pacakge</a></li>
+        </ul>
+      </li>
+      <li>
+      <a href="ViewBookingAdmin.aspx">View Bookings</a>
+      </li>
+      <li><a href="View Feedback.aspx">View feedback</a></li>
+     <li><asp:Label ID="Label1" runat="server"></asp:Label>
+     <ul>
+      <li><a href="Admin_profileupdate.aspx">Profile</a></li>
+      <li><a href="Admin_changepasswd.aspx">Change Password</a></li>
+     </ul>
+     
+     </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+
+
+   
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    </div>
+
+
+    <div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="heading">Contact us</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address> India darshan pvt.Ltd, Hiranandani garden,
+          Ridge Road &amp; Powai, Mumbai, 400076</address>
+        </li>
+          <li><i class="fa fa-envelope-o"></i>indiadarshan@domain.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://www.facebook.com/Awesome-Life-1833167463586714/?ref=bookmarks"><i class="fa fa-facebook"></i></a></li>
+        
+        
+      </ul>
+    </div>
+    <div class="one_quarter">
+     <h4> "Journey brings the happiness not the destination."</h4>
+      </div>
+    <div class="one_quarter">
+      
+
+    </div>
+   
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+
+
+
+</body>
+</html>
